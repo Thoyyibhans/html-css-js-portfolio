@@ -1,10 +1,11 @@
+
 /* GENERAL */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Ensure padding and borders are included in width/height */
 }
 
 body {
@@ -20,12 +21,14 @@ p {
 }
 
 /* TRANSITION */
+
 a,
 .btn {
   transition: all 300ms ease;
 }
 
 /* DESKTOP NAV */
+
 nav,
 .nav-links {
   display: flex;
@@ -46,6 +49,7 @@ nav {
 a {
   color: black;
   text-decoration: none;
+  text-decoration-color: white;
 }
 
 a:hover {
@@ -64,6 +68,7 @@ a:hover {
 }
 
 /* HAMBURGER MENU */
+
 #hamburger-nav {
   display: none;
 }
@@ -86,7 +91,7 @@ a:hover {
   width: 100%;
   height: 2px;
   background-color: black;
-  transition: all 0.3s ease-in-out; /* Corrected transition timing function */
+  transition: all 0.3 ease-in-out;
 }
 
 .menu-links {
@@ -97,7 +102,7 @@ a:hover {
   width: fit-content;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-in-out; /* Specified property for transition */
+  transition: all 0.3 ease-in-out;
 }
 
 .menu-links a {
@@ -107,6 +112,7 @@ a:hover {
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
+  transition: all 0.3 ease-in-out;
 }
 
 .menu-links li {
@@ -129,20 +135,34 @@ a:hover {
   transform: rotate(-45deg) translate(10px, -5px);
 }
 
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
 /* SECTIONS */
+
 section {
   padding-top: 4vh;
   height: 96vh;
   margin: 0 10rem;
+  box-sizing: border-box;
   min-height: fit-content;
 }
 
 .section-container {
   display: flex;
-  gap: 4rem; /* Merged gaps for consistency */
 }
 
 /* PROFILE SECTION */
+
 #profile {
   display: flex;
   justify-content: center;
@@ -188,12 +208,14 @@ section {
 }
 
 /* ICONS */
+
 .icon {
   cursor: pointer;
   height: 2rem;
 }
 
 /* BUTTONS */
+
 .btn-container {
   display: flex;
   justify-content: center;
@@ -216,6 +238,10 @@ section {
 .btn-color-1:hover,
 .btn-color-2:hover {
   cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
   background: rgb(53, 53, 53);
   color: white;
 }
@@ -232,14 +258,20 @@ section {
   border: rgb(255, 255, 255) 0.1rem solid;
 }
 
+.btn-container {
+  gap: 1rem;
+}
+
 /* ABOUT SECTION */
+
 #about {
   position: relative;
 }
 
 .about-containers {
   gap: 2rem;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .about-details-container {
@@ -272,7 +304,19 @@ section {
   text-align: center;
 }
 
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
 /* EXPERIENCE SECTION */
+
 #experience {
   position: relative;
 }
@@ -294,6 +338,7 @@ section {
   display: flex;
   text-align: initial;
   flex-wrap: wrap;
+  flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
 }
@@ -310,6 +355,7 @@ article .icon {
 }
 
 /* PROJECTS SECTION */
+
 #projects {
   position: relative;
 }
@@ -335,7 +381,16 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
+.small-title {
+  font-size: 1.5rem; /* Adjust the size as needed */
+  font-weight: bold;
+  text-align: center; /* Optional: center the title */
+  margin: 20px 0; /* Optional: adjust the margin around the title */
+}
+
+
 /* CONTACT */
+
 #contact {
   display: flex;
   justify-content: center;
@@ -349,7 +404,7 @@ article .icon {
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250); /* Fixed background property */
+  background: (250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
 }
@@ -375,6 +430,7 @@ article .icon {
 }
 
 /* FOOTER SECTION */
+
 footer {
   height: 26vh;
   margin: 0 1rem;
@@ -383,3 +439,110 @@ footer {
 footer p {
   text-align: center;
 }
+.experience-section {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.experience-container {
+  display: grid;
+  grid-template-columns: 1fr 50px 1fr; /* Left Column, Timeline, Right Column */
+  position: relative;
+  gap: 20px;
+}
+
+.experience-box {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.experience-content {
+  display: flex; /* Flexbox for horizontal layout */
+  align-items: center;
+}
+
+.left {
+  grid-column: 1; /* Place in the left column */
+}
+
+.right {
+  grid-column: 3; /* Place in the right column */
+  grid-row: 1; /* Align with the first experience on the left */
+}
+
+.timeline {
+  grid-column: 2; /* Center column */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.line {
+  width: 2px;
+  background-color: #ddd;
+  height: 250px; /* Adjust based on your design */
+  position: absolute;
+}
+
+.experience-image {
+  width: 60px; /* Set image width */
+  height: 60px; /* Set image height */
+  object-fit: cover;
+  border-radius: 50%; /* Optional: round the image (for circular profile look) */
+  margin-right: 15px; /* Space between the image and text */
+}
+
+.experience-details {
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+/* Responsive Styling for smaller devices */
+@media (max-width: 768px) {
+  .experience-container {
+    grid-template-columns: 1fr; /* Make each box full width */
+    gap: 40px; /* Add more space between boxes */
+  }
+
+  .experience-box {
+    width: 100%; /* Make the experience boxes full width */
+    text-align: center; /* Center the text for smaller screens */
+  }
+
+  .experience-content {
+    flex-direction: column; /* Stack the image and text vertically */
+    align-items: center;
+  }
+
+  .experience-image {
+    margin-right: 0;
+    margin-bottom: 10px; /* Add space between image and text in vertical layout */
+  }
+
+  .timeline {
+    display: none; /* Hide the timeline on small screens */
+  }
+
+}
+.small-title {
+  font-size: 1.5rem; /* Adjust the size as needed */
+  font-weight: bold;
+  text-align: center; /* Optional: center the title */
+  margin: 20px 0; /* Optional: adjust the margin around the title */
+}
+
