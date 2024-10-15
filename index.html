@@ -32,132 +32,477 @@
       <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
       <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
     </ul>
-  </nav>
-
-  <!-- Profile Section -->
-  <section id="profile" class="section profile">
-    <div class="profile-image">
-      <img src="./assets/IMGg.jpg" alt="Thoyyib Hasonangan profile picture" />
+   </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="assets/Profile.png" alt="Thoyyib profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Thoyyib Hasonangan</h1>
+        <p class="section__text__p2">Digital Specialist</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('assets/CV_Thoyyib Hasonangan. S.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/thoyyibhans/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/Thoyyib Hasonangan.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ years <br />Intern MBKM <br/>Associate Book Writer<br />Content Writer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Information Technology<br />Labuhanbatu University<br />3rd-semester<br />GPA: 4,0</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              As an IT student with a 4.0 GPA, I'm passionate about innovation
+              and creativity in the tech industry. Outside of academics, I enjoy
+              exploring new coffee shops and sci-fi shows. I'm excited to apply  
+              my skills,  stay open to new ideas, and make a positive impact.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+        />
+        <div class="experience-section">
+          <div class="experience-container">
+            <!-- First Experience -->
+            <div class="experience-box left">
+              <div class="experience-content">
+                <img src="assets/asadel publisher.jpeg" alt="Experience 1" class="experience-image">
+                <div class="experience-details">
+                  <h3>Associate Book Writer</h3>
+                  <p>PT Asadel Liamsindo Teknologi<br/>
+                    (Member of Lensetek International, LLC. Colorado, USA)</p>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Timeline with Vertical Line -->
+            <div class="timeline">
+              <div class="line"></div>
+            </div>
+        
+            <!-- Second Experience (below Experience 1) -->
+            <div class="experience-box left">
+              <div class="experience-content">
+                <img src="assets/asadel publisher.jpeg" alt="Experience 2" class="experience-image">
+                <div class="experience-details">
+                  <h3>Book Editor</h3>
+                  <p>PT Asadel Liamsindo Teknologi<br/>
+                    (Member of Lensetek International, LLC. Colorado, USA)</p>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Third Experience (on the other side of Experience 1) -->
+            <div class="experience-box right">
+              <div class="experience-content">
+                <img src="assets/tekdi.jpeg" alt="Experience 3" class="experience-image">
+                <div class="experience-details">
+                  <h3>Content Writer</h3>
+                  <p>PT. Teknologi Indonesia Group</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Digital Skills</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Basic     </p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>SQL</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Excel</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Python</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Digital Skills</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Oracle Database Design</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Alibaba Cloud</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Data Entry</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Creative Writing</h3>
+                    <p>Experienced</p>
+                    
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+      </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+        <h1 class="title small-title">Book Writer & Editor</h1> <!-- Added "small-title" class -->
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">      
+              <img
+                src="assets/buku robot.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h4 class="experience-sub-title project-title">Buku "Membangun Aplikasi Robot AI Berbasis 
+              Google Gemini API"</h4>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='assets/Dummy buku Robot AI.pdf'"
+              >
+                Dummy
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/buku meta.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h4 class="experience-sub-title project-title">Buku "Metaverse: Pengembangan Interaksi NPC Menggunakan
+              Conversation AI"</h4>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='assets/dummy metaverse.pdf'"
+              >
+                Dummy
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
     </div>
-    <div class="profile-text">
-      <p>Hello, I'm</p>
-      <h1>Thoyyib Hasonangan</h1>
-      <p class="job-title">Data and Content Intern</p>
+  </div>
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#projects'"
+  />
+</section>
+<section id="projects">
+  <h1 class="title small-title">Content Writer</h1>
+  <div class="experience-details-container">
+   <div class="about-containers">
+    <div class="details-container color-container">
+      <div class="article-container">
+        <img
+          src="assets/web article copy.png"
+          alt="Project 1"
+          class="project-img"
+        />
+      </div>
+      <h4 class="experience-sub-title project-title">Web Articles</h4>
       <div class="btn-container">
-        <button class="btn btn-primary" onclick="window.open('./assets/CV_Thoyyib Hasonangan.pdf')">Download CV</button>
-        <button class="btn btn-secondary" onclick="location.href='#contact'">Contact Info</button>
-      </div>
-      <div class="social-icons">
-        <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/thoyyibhans/'" />
-        <img src="./assets/github.png" alt="Github" class="icon" onclick="location.href='https://github.com/Thoyyibhans'" />
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="section about">
-    <h1 class="section-title">About Me</h1>
-    <div class="about-container">
-      <div class="about-image">
-        <img src="./assets/ai8.jpg" alt="Profile" />
-      </div>
-      <div class="about-details">
-        <div class="details-box">
-          <img src="./assets/experience.png" alt="Experience" class="icon" />
-          <h3>Experience</h3>
-          <p>1+ year at MBKM, Kampus Merdeka</p>
-        </div>
-        <div class="details-box">
-          <img src="./assets/education.png" alt="Education" class="icon" />
-          <h3>Education</h3>
-          <p>B.Sc. in Information Technology, Universitas Labuhanbatu</p>
-        </div>
-        <p>
-          I am a tech enthusiast skilled in database design, UI/UX, and content writing. 
-          I’ve interned as a Content Writer at PT Teknologi Indonesia Grup and an 
-          Associate Book Writer at PT Asadel Liamsindo Teknologi. I hold certifications in 
-          Oracle Database Design, along with solid proficiency in Excel and practical 
-          software tools.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience Section -->
-  <section id="experience" class="section experience">
-    <h1 class="section-title">Experience</h1>
-    <div class="experience-container">
-      <div class="experience-box">
-        <h2>Frontend Development</h2>
-        <ul class="skills-list">
-          <li><img src="./assets/checkmark.png" alt="HTML" /> HTML - Experienced</li>
-          <li><img src="./assets/checkmark.png" alt="CSS" /> CSS - Experienced</li>
-          <li><img src="./assets/checkmark.png" alt="SASS" /> SASS - Intermediate</li>
-          <li><img src="./assets/checkmark.png" alt="JavaScript" /> JavaScript - Basic</li>
-        </ul>
-      </div>
-      <div class="experience-box">
-        <h2>Backend Development</h2>
-        <ul class="skills-list">
-          <li><img src="./assets/checkmark.png" alt="PostgreSQL" /> PostgreSQL - Basic</li>
-          <li><img src="./assets/checkmark.png" alt="NodeJS" /> NodeJS - Intermediate</li>
-          <li><img src="./assets/checkmark.png" alt="Express" /> ExpressJS - Intermediate</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="section projects">
-    <h1 class="section-title">Projects</h1>
-    <div class="projects-container">
-      <div class="project-card">
-        <img src="./assets/project-1.png" alt="Project One" />
-        <h2>Project One</h2>
-        <div class="btn-container">
-          <button class="btn btn-primary" onclick="location.href='https://github.com/'">Github</button>
-          <button class="btn btn-primary" onclick="location.href='https://github.com/'">Live Demo</button>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="./assets/project-2.png" alt="Project Two" />
-        <h2>Project Two</h2>
-        <div class="btn-container">
-          <button class="btn btn-primary" onclick="location.href='https://github.com/'">Github</button>
-          <button class="btn btn-primary" onclick="location.href='https://github.com/'">Live Demo</button>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="./assets/project-3.png" alt="Project Three" />
-        <h2>Project Three</h2>
-        <div class="btn-container">
-          <button class="btn btn-primary" onclick="location.href='https://github.com/'">Github</button>
-          <button class="btn btn-primary" onclick="location.href='https://github.com/'">Live Demo</button>
+        <button
+          class="btn btn-color-2 project-btn"
+          onclick="location.href='https://teknologi.id/author/Thoyyib%20Hasonangan.%20S'"
+        >
+          Read
+        </button>
+          </article>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section contact">
-    <h1 class="section-title">Contact Me</h1>
-    <div class="contact-details">
-      <div class="contact-item">
-        <img src="./assets/email.png" alt="Email" class="icon contact-icon" />
-        <p><a href="mailto:examplemail@gmail.com">examplemail@gmail.com</a></p>
+  </div>
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#projects'"
+  />
+</section>
+<section id="projects">
+  <div class="experience-details-container">
+   <div class="about-containers">
+    <div class="details-container color-container">
+      <div class="article-container">
+        <img
+        src="assets/ig1.jpg"
+        alt="Project 1"
+        class="project-img"
+        />
       </div>
-      <div class="contact-item">
-        <img src="./assets/linkedin.png" alt="LinkedIn" class="icon contact-icon" />
-        <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+      <h4 class="experience-sub-title project-title"> </h4>
+      <div class="btn-container">
+        <button
+          class="btn btn-color-2 project-btn"
+          onclick="location.href='https://www.instagram.com/p/C57Xhb4SqKc/'"
+        >
+          Post 1
+        </button>
+</div>
+</div>
+<div class="details-container color-container">
+  <div class="article-container">
+    <img
+    src="assets/ig2.jpg"
+    alt="Project 1"
+    class="project-img"
+    />
+  </div>
+  <h4 class="experience-sub-title project-title"> </h4>
+  <div class="btn-container">
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https://www.instagram.com/p/C5-SJ5ESJSt/'"
+    >
+      Post 2
+    </button>
+  </div>
+</div>
+<div class="details-container color-container">
+  <div class="article-container">
+    <img
+    src="assets/ig3.jpg"
+    alt="Project 1"
+    class="project-img"
+    />
+  </div>
+  <h4 class="experience-sub-title project-title"> </h4>
+  <div class="btn-container">
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https://www.instagram.com/p/C5-ASLFy07_/?img_index=1'"
+    >
+      Post 3
+    </button>
+  </div>
+</div>
+<div class="details-container color-container">
+  <div class="article-container">
+    <img
+    src="assets/ig4.jpg"
+    alt="Project 1"
+    class="project-img"
+    />
+  </div>
+  <h4 class="experience-sub-title project-title"> </h4>
+  <div class="btn-container">
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https://www.instagram.com/p/C6sr8s2SsW-/?img_index=1'"
+    >
+      Post 4
+    </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2024 Thoyyib Hasonangan. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">thoyyibhans@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/thoyyibhans/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
+>>>>>>> Stashed changes
+
